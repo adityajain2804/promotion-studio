@@ -26,7 +26,7 @@ export function WaterfallChart({ stages, symbol = "$" }: { stages: WaterfallStag
     <div className="h-[280px] w-full">
       <ResponsiveContainer width="100%" height="100%">
         <BarChart data={data} margin={{ top: 18, right: 8, left: 8, bottom: 4 }} barCategoryGap="24%">
-          <XAxis dataKey="name" tick={{ fontSize: 11 }} interval={0} axisLine={false} tickLine={false} />
+          <XAxis dataKey="name" tick={{ fontSize: 9 }} interval={0} angle={-18} textAnchor="end" height={38} axisLine={false} tickLine={false} />
           <YAxis tick={{ fontSize: 11 }} axisLine={false} tickLine={false} width={56} tickFormatter={(v) => `${symbol}${Math.round(Number(v) / 1000)}K`} />
           <Tooltip
             cursor={{ fill: "oklch(0.95 0.01 258 / 0.6)" }}
