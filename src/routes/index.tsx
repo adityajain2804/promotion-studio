@@ -267,7 +267,7 @@ function CampaignStudio() {
           bodyClassName="p-0"
         >
           <div className="overflow-auto">
-            <table className="w-full min-w-[760px] border-collapse text-[11px]">
+            <table className="w-full min-w-[680px] border-collapse text-[10.5px]">
               <thead className="bg-surface-muted/70">
                 <tr>
                   {[
