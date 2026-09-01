@@ -139,7 +139,7 @@ function CampaignStudio() {
   const curve = selected ? responseCurveFor(selected.p) : [];
 
   return (
-    <div className="grid grid-cols-1 gap-3 xl:grid-cols-[25%_45%_minmax(0,1fr)]">
+    <div className="grid grid-cols-1 gap-3 xl:grid-cols-[minmax(240px,22%)_minmax(0,48%)_minmax(0,1fr)]">
       {/* ---------------- VERTICAL 1 ---------------- */}
       <div className="space-y-3">
         <Panel title="Cohort & Offer Selection" subtitle="Vertical 1 · Inputs" bodyClassName="space-y-3 p-3">
