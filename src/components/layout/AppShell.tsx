@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Bell, CalendarClock, ChevronDown, CircleDot } from "lucide-react";
-import logo from "@/assets/ct-logo.png.asset.json";
+import logo from "@/assets/ft-logo.png";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import {
   DropdownMenu,
@@ -31,7 +31,7 @@ export function AppShell({ children }: { children: ReactNode }) {
       <header className="sticky top-0 z-40 border-b border-border bg-surface/95 backdrop-blur">
         <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-2.5">
           <div className="flex min-w-0 items-center gap-3">
-            <img src={logo.url} alt="FarmaTodo Promotion Intelligence Studio logo" className="h-9 w-9 shrink-0 rounded-lg" />
+            <img src={logo} alt="FarmaTodo Promotion Intelligence Studio logo" className="h-9 w-9 shrink-0 rounded-lg" />
             <div className="min-w-0">
               <div className="truncate text-sm font-semibold tracking-tight">FarmaTodo Promotion Intelligence Studio</div>
               <div className="truncate text-[11px] tracking-wide text-muted-foreground uppercase">
