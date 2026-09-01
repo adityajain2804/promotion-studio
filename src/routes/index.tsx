@@ -267,7 +267,7 @@ function CampaignStudio() {
           bodyClassName="p-0"
         >
           <div className="overflow-auto">
-            <table className="w-full min-w-[680px] border-collapse text-[10.5px]">
+            <table className="w-full min-w-[620px] border-collapse text-[10.5px]">
               <thead className="bg-surface-muted/70">
                 <tr>
                   {[
@@ -325,7 +325,7 @@ function CampaignStudio() {
                     </td>
                     <td className="px-2 py-2" onClick={(e) => e.stopPropagation()}>
                       <div className="flex items-center gap-1.5">
-                        <Button size="sm" variant="outline" className="h-6 px-2 text-[10px]" onClick={() => setOverrideRow(r.p.sku)}>
+                        <Button size="sm" variant="outline" className="h-6 px-1.5 text-[9px]" onClick={() => setOverrideRow(r.p.sku)}>
                           Override
                         </Button>
                         <Checkbox
