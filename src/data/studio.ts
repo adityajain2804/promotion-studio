@@ -226,7 +226,7 @@ export function computeCustomerRows(opts: {
   const audienceFactor =
     audience === "mass_general" ? 0.82 : audience === "reactivation" ? 1.24 : audience === "cyclical_replenishment_rx" ? 0.71 : 1;
 
-  return CUSTOMER_SEEDS.filter((s) => clusters.includes(s.clusterId ?? s.cluster))
+  return CUSTOMER_SEEDS.filter((s) => clusters.includes(s.cluster))
     .filter((s) => (tier === "All" ? true : tier === "Prime Loyalty Only" ? s.prime : !s.prime))
     .map((s, i) => {
       const meta = CLUSTER_META.find((c) => c.id === s.cluster)!;
